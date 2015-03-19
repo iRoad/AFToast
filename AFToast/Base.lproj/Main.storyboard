@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeL-uo-O5S">
+                                <rect key="frame" x="252.5" y="520" width="95" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48010411460000002" blue="0.28636175120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="imageAndtext">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ig-Fj-Oeh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-nS-Bks">
+                                <rect key="frame" x="538" y="520" width="42" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48010411460000002" blue="0.28636175120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TeH-69-6s8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYn-Xl-CfJ">
+                                <rect key="frame" x="20" y="520" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.48010411460000002" blue="0.28636175120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhO-Gw-vVd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35745784159999999" green="0.45428624340000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J8Y-nS-Bks" secondAttribute="bottom" constant="50" id="CjS-R8-dQO"/>
+                            <constraint firstAttribute="bottom" secondItem="BeL-uo-O5S" secondAttribute="bottom" constant="50" id="Hp4-Yp-RLm"/>
+                            <constraint firstAttribute="trailing" secondItem="J8Y-nS-Bks" secondAttribute="trailing" constant="20" id="TD4-Ly-ECb"/>
+                            <constraint firstAttribute="centerX" secondItem="BeL-uo-O5S" secondAttribute="centerX" id="cHC-yJ-uLG"/>
+                            <constraint firstItem="rYn-Xl-CfJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gtg-yw-zhK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rYn-Xl-CfJ" secondAttribute="bottom" constant="50" id="m7G-50-3Bh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
