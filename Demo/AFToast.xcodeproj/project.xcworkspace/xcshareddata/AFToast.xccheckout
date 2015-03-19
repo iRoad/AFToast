@@ -14,11 +14,11 @@
 		<string>https://github.com/Pingerd/AFToast.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AFToast.xcodeproj</string>
+	<string>Demo/AFToast.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>79A78AFFB8CED9527B6A89F0167EA752A5861123</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Pingerd/AFToast.git</string>

@@ -14,7 +14,7 @@
 		7E91F8BA1ABAB20200A625CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E91F8B91ABAB20200A625CB /* Images.xcassets */; };
 		7E91F8BD1ABAB20200A625CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E91F8BB1ABAB20200A625CB /* LaunchScreen.xib */; };
 		7E91F8C91ABAB20200A625CB /* AFToastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91F8C81ABAB20200A625CB /* AFToastTests.m */; };
-		7E91F8D51ABAB35C00A625CB /* AFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91F8D41ABAB35C00A625CB /* AFToast.m */; };
+		7E91F8D91ABAB9D800A625CB /* AFToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E91F8D81ABAB9D800A625CB /* AFToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,8 @@
 		7E91F8C21ABAB20200A625CB /* AFToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E91F8C71ABAB20200A625CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E91F8C81ABAB20200A625CB /* AFToastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFToastTests.m; sourceTree = "<group>"; };
-		7E91F8D31ABAB35C00A625CB /* AFToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFToast.h; sourceTree = "<group>"; };
-		7E91F8D41ABAB35C00A625CB /* AFToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFToast.m; sourceTree = "<group>"; };
+		7E91F8D71ABAB9D800A625CB /* AFToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFToast.h; sourceTree = "<group>"; };
+		7E91F8D81ABAB9D800A625CB /* AFToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 				7E91F8B31ABAB20200A625CB /* ViewController.h */,
 				7E91F8B41ABAB20200A625CB /* ViewController.m */,
 				7E91F8B61ABAB20200A625CB /* Main.storyboard */,
-				7E91F8D21ABAB35C00A625CB /* AFToast */,
+				7E91F8D61ABAB9D800A625CB /* AFToast */,
 				7E91F8B91ABAB20200A625CB /* Images.xcassets */,
 				7E91F8BB1ABAB20200A625CB /* LaunchScreen.xib */,
 				7E91F8AC1ABAB20200A625CB /* Supporting Files */,
@@ -123,13 +123,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7E91F8D21ABAB35C00A625CB /* AFToast */ = {
+		7E91F8D61ABAB9D800A625CB /* AFToast */ = {
 			isa = PBXGroup;
 			children = (
-				7E91F8D31ABAB35C00A625CB /* AFToast.h */,
-				7E91F8D41ABAB35C00A625CB /* AFToast.m */,
+				7E91F8D71ABAB9D800A625CB /* AFToast.h */,
+				7E91F8D81ABAB9D800A625CB /* AFToast.m */,
 			);
-			path = AFToast;
+			name = AFToast;
+			path = ../../AFToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +235,7 @@
 			files = (
 				7E91F8B51ABAB20200A625CB /* ViewController.m in Sources */,
 				7E91F8B21ABAB20200A625CB /* AppDelegate.m in Sources */,
-				7E91F8D51ABAB35C00A625CB /* AFToast.m in Sources */,
+				7E91F8D91ABAB9D800A625CB /* AFToast.m in Sources */,
 				7E91F8AF1ABAB20200A625CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +431,7 @@
 				7E91F8CE1ABAB20200A625CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E91F8CF1ABAB20200A625CB /* Build configuration list for PBXNativeTarget "AFToastTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +440,7 @@
 				7E91F8D11ABAB20200A625CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
