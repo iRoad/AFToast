@@ -63,6 +63,17 @@ static AFToast *sharedView = nil;
     [[AFToast sharedView] showImage:image withText:text withFont:font];
 }
 
++ (void)showText:(NSString *)text withFont:(UIFont *)font textColor:(UIColor *)textColor backgroundColor:(UIColor *)bgColor{
+    [self showImage:nil withText:text font:font textColor:textColor backgroundColor:bgColor];
+}
+
++ (void)showImage:(UIImage *)image withText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor backgroundColor:(UIColor *)bgColor {
+    AFToast *toast = [AFToast sharedView];
+    [toast showImage:image withText:text withFont:font];
+    toast.backgroundColor = bgColor;
+    toast.textLabel.textColor = textColor;
+}
+
 - (void)showImage:(UIImage *)image withText:(NSString *)text withFont:(UIFont *)font {
     if (image == nil && text == nil) {
         return;
@@ -191,6 +202,10 @@ static AFToast *sharedView = nil;
             rotateAngle = 0.0;
             newCenter = CGPointMake(posX, posY);
             break;
+    }
+    
+    if ([[UIDevice currentDevice].systemVersion doubleValue] > 8.0) {
+        rotateAngle = 0.0;
     }
     
     self.transform = CGAffineTransformMakeRotation(rotateAngle);

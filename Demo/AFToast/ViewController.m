@@ -30,7 +30,7 @@
 }
 - (IBAction)showImageAndText:(id)sender {
     
-    [AFToast showImage:[UIImage imageNamed:@"tips"] withText:@"春天到了" withFont:[UIFont systemFontOfSize:20]];
+    [AFToast showImage:[UIImage imageNamed:@"tips"] withText:@"夏天到了" font:[UIFont systemFontOfSize:12] textColor:[UIColor redColor] backgroundColor:[[UIColor whiteColor] colorWithAlphaComponent:.5]];
 }
 - (IBAction)showImage:(id)sender {
     [AFToast showImage:[UIImage imageNamed:@"network"]];
